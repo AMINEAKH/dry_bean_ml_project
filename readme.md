@@ -1,48 +1,114 @@
+# 🫘 Dry Bean Classification ML Project
 
-## 🚀 How to Run
+Welcome! This project demonstrates a complete machine learning workflow for classifying dry bean types using the UCI Dry Bean Dataset.
 
-1. **Clone or Download** this repository.
-2. **Install dependencies** :
-    ```
-    pip install -r requirements.txt
-    ```
-3. **Run the notebook** for a step-by-step explanation and visuals:
-    ```
-    jupyter notebook notebooks/dry_bean_classification.ipynb
-    ```
-   _or just run the script to generate outputs in one shot:_
-    ```
-    python main.py
-    ```
-4. **Check the `results/` folder** for model evaluation results.
-
-## 📝 What Each Folder/File Is For
-
-- **data/**: The original dataset file (.xlsx).
-- **notebooks/**: Jupyter notebook for detailed EDA, model building, and explanation.
-- **models/**: Saved, trained models (pickled).
-- **results/classification_reports/**: Text reports with metrics for each model.
-- **results/confusion_matrices/**: PNG images of each confusion matrix.
-- **results/accuracy_scores.csv**: Table comparing all model accuracies.
-- **main.py**: Full workflow in script form (no markdown/explanation).
-- **requirements.txt**: All required Python libraries.
-- **README.md**: This file.
-
-## 🛠️ Features
-
-- Data loading, preprocessing, and train/test split
-- Automatic label encoding and feature scaling
-- Model training: Random Forest, SVM (RBF), KNN (with auto-best k)
-- Saving trained models for later use
-- Classification reports and confusion matrices (text & image)
-- Accuracy comparison (CSV)
-- Fully reproducible via notebook or script
-
-## Credits
-
-- Dataset: [UCI Machine Learning Repository - Dry Bean Dataset](https://archive.ics.uci.edu/dataset/602/dry+bean+dataset)
-- Author: Mohamed Amine Akhdaich
+**Key Features:**
+- Clean, professional Python project structure
+- Data loading, preprocessing, and visualization
+- Model training with Random Forest, SVM (RBF), and KNN (optimal k selection)
+- Evaluation with classification reports and confusion matrices
+- Results, models, and metrics saved for easy review and reproducibility
 
 ---
 
-Feel free to fork, star, or build on this project!
+## 📂 Project Structure
+
+```
+
+dry\_bean\_ml\_project/
+├── data/
+│   └── Dry\_Bean\_Dataset.xlsx
+├── models/
+│   ├── random\_forest\_model.pkl
+│   ├── svm\_model.pkl
+│   └── knn\_model.pkl
+├── notebooks/
+│   └── dry\_bean\_classification.ipynb
+├── results/
+│   ├── classification\_reports/
+│   ├── confusion\_matrices/
+│   └── accuracy\_scores.csv
+├── main.py
+├── requirements.txt
+└── README.md
+
+````
+
+---
+
+## 🚀 Getting Started
+
+**1. Clone the repository:**
+```bash
+git clone https://github.com/AMINEAKH/dry_bean_ml_project.git
+cd dry_bean_ml_project
+````
+
+**2. Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**3. Add the dataset:**
+Download [`Dry_Bean_Dataset.xlsx`](https://archive.ics.uci.edu/dataset/602/dry+bean+dataset) from UCI and put it in the `data/` folder.
+
+**4. Run the project:**
+
+* **For full code & explanations:**
+  Launch Jupyter and run the notebook:
+
+  ```bash
+  jupyter notebook notebooks/dry_bean_classification.ipynb
+  ```
+* **To run as a script:**
+
+  ```bash
+  python main.py
+  ```
+
+**5. Check results:**
+
+* Trained models: `models/`
+* Classification reports: `results/classification_reports/`
+* Confusion matrices: `results/confusion_matrices/`
+* Accuracy comparison: `results/accuracy_scores.csv`
+
+---
+
+## 📊 Example Results
+
+| Model         | Accuracy |
+| ------------- | -------- |
+| Random Forest | 0.92     |
+| SVM           | 0.91     |
+| KNN           | 0.90     |
+
+*(Actual results may vary; see `accuracy_scores.csv`)*
+
+---
+
+## 🧑‍💻 Author
+
+* **Amine Akh** ([AMINEAKH on GitHub](https://github.com/AMINEAKH))
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+You are free to use, modify, and share this code for any purpose — just give credit!
+
+---
+
+## 📑 References
+
+* [UCI Dry Bean Dataset](https://archive.ics.uci.edu/dataset/602/dry+bean+dataset)
+* [scikit-learn](https://scikit-learn.org/)
+* [pandas](https://pandas.pydata.org/)
+
+---
+
+*If you like this project, drop a star ⭐ on the repo!*
+
