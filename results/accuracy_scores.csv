@@ -1,0 +1,4 @@
+Model,Accuracy
+Random Forest,0.9207
+SVM,0.9221
+KNN,0.9188
